@@ -8,18 +8,18 @@ class summerplanner:
         else:
             print("\n summer activities:")
             for item in self.activities:
-                print("- " + item)
+                print(item)
 
     def add_item(self, activity):
         self.activities.append(activity)
-        print('"' + activity + '" added to the list.')
+        print(activity "added to the list")
 
     def remove_item(self, activity):
         if activity in self.activities:
             self.activities.remove(activity)
-            print('"' + activity + '" removed from the list.')
+            print(activity + "removed from the list")
         else:
-            print('"' + activity + '" not found in your list.')
+            print(activity + "not found in your list")
 
 def show_menu():
     print("\nmenu:")
@@ -37,7 +37,7 @@ def run():
         if choice == "1":
             planner.show_list()
         elif choice == "2":
-            new_activity = input("type a new activity: ")
+            new_activity = input("type a new activity")
             planner.add_item(new_activity)
         elif choice == "3":
             print("exiting!!")
